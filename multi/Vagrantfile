@@ -1,0 +1,14 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+require '../trusty'
+
+Vagrant.configure(2) do |config|
+  # --- node master ---
+  provision config, "node1", 9, 1, true
+  # --- h2o workloads ---
+  provision config, "node2", 10, 2, false
+  provision config, "node3", 11, 2, false
+  # --- container workloads ---
+  provision config, "node4", 12, 1, false
+end
