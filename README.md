@@ -4,7 +4,7 @@ An Ansible role for installing [Apache Spark](https://spark.apache.org).
 
 ## Role Variables
 
-Can be edited in the file tasks/main.yml
+Below are the current tasks/main.yml
 
 - `spark_version:` - `"1.5.2-bin-hadoop2.6"`
 - `spark_mirror:` - `"http://d3kbcqa49mib13.cloudfront.net"`
