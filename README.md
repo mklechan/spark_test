@@ -1,4 +1,4 @@
-# Spark_Test
+# Spark-Ansible
 
 An Ansible role for installing [Apache Spark](https://spark.apache.org).
 
