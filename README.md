@@ -15,5 +15,15 @@ Below are the current variables. These can be edited/viewed in `"tasks/main.yml"
 - `spark_run_dir:` `"/run/spark"`
 - `spark_env_extras:` {}
 
+## Host File
+The host file in this repo is currently set as follows:
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[spark_worker]<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172.16.161.129<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172.16.161.130<br />
+   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[spark_master]<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172.16.161.129<br />
+- To have this work with your machine you must change the above IP addresses to the ones in your Vagrant setup.
 ## To Run
    ```ansible-playbook -s -k -i hosts -u vagrant tasks/main.yml```
